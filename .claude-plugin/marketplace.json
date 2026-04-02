@@ -1,0 +1,18 @@
+{
+  "name": "multi-hat-system",
+  "owner": {
+    "name": "DarKWinGTM"
+  },
+  "metadata": {
+    "description": "Standalone marketplace manifest for the multi-hat-system plugin repo.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "multi-hat-system",
+      "source": "./",
+      "description": "Governed multi-perspective analysis agent package with one canonical runtime agent and modular skill surface.",
+      "tags": ["analysis", "security", "architecture"]
+    }
+  ]
+}
