@@ -62,6 +62,18 @@ Checked local validation from the repo root:
 - `claude plugins install multi-hat-system@multi-hat-system --scope local` succeeds
 - `claude agents` shows `multi-hat-system:multi-hat-system`
 
+### Update an installed plugin
+
+If the plugin is already installed, update it by using the installed identifier shape `plugin@marketplace`:
+
+```bash
+claude plugins update multi-hat-system@darkwingtm --scope local
+```
+
+Why this exact shape matters:
+- `claude plugins update multi-hat-system --scope local` may fail because the installed local plugin is keyed by `multi-hat-system@darkwingtm`
+- the explicit `plugin@marketplace` form matches the installed identifier shown in `claude plugins list`
+
 ### Alternate local source loading
 
 | Path | Current meaning | Status |
