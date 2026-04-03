@@ -3,7 +3,7 @@
 ## 0) Document Control
 
 > **Parent Scope:** Multi-Hat System Design
-> **Current Version:** 1.6
+> **Current Version:** 1.7
 > **Session:** dd0bf4af-a66b-4b07-bb9d-a90a0e57b54e (2026-04-02)
 
 ---
@@ -220,6 +220,7 @@ The intended model is:
 - keep the canonical runtime and handbook bodies in English
 - make mode selection and package selection follow task intent rather than exact wording or prompt language
 - add multilingual examples only where they materially improve front-door understanding or validation
+- keep multilingual support bounded to the front door so the package does not turn into duplicated translated doctrine
 
 ### 6.6 Single-workspace plugin-compatible packaging rule
 

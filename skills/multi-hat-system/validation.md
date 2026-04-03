@@ -77,6 +77,7 @@ Before treating a response as good enough, confirm:
 - Is the confidence level honest enough for the claim strength?
 - Were no-go or prerequisite conditions stated when warranted?
 - Would the same task intent still map to the same mode even if the prompt language changed?
+- Do the multilingual examples still preserve one-task / one-answer behavior rather than triggering accidental option sprawl?
 
 ---
 

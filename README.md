@@ -9,6 +9,7 @@ The system targets **one canonical main agent only**:
 - `agents/multi-hat-system.md`
 
 The current product-hardening focus is making the front door more explicit in live usage so the user can see whether the package is in Advisory, Decision, or Clarify-First mode and why the chosen path fits.
+The current multilingual wave keeps that front door English-led but adds bounded multilingual examples where they materially improve intent mapping.
 
 The active package also includes:
 - `skills/multi-hat-system/` as the operator bridge plus modular handbook surface

@@ -47,12 +47,16 @@ Use this support skill when you need to:
 - "Design a migration plan"
 - "How should I implement a queue worker?"
 - "ช่วยวิเคราะห์แนวทางทำระบบนี้"
+- "ควรวาง architecture งานนี้ยังไง"
+- "ช่วยดูแนวทาง implement ให้หน่อย"
 
 ### Decision examples
 - "REST or GraphQL?"
 - "PostgreSQL or MongoDB?"
 - "Monolith or microservices?"
 - "ควรเลือกแบบไหนดีระหว่าง A กับ B"
+- "ช่วยเทียบสองทางเลือกนี้ให้หน่อย"
+- "อันไหนเหมาะกว่าระหว่างสองแบบนี้"
 
 ### Clarify-first examples
 - request is too vague to assess responsibly

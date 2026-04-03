@@ -23,6 +23,7 @@ The hats are **internal lenses**, not separate runtime agents, not separate task
 - **Decision Mode** is used only when the user explicitly asks to compare alternatives.
 - **Clarify first** if a missing constraint would materially change the recommendation.
 - Mode selection should follow the user's task intent rather than exact wording or prompt language.
+- Multilingual front-door support should live in examples and intent-oriented wording, not in a translated duplicate handbook.
 
 ---
 

@@ -92,7 +92,7 @@ Need governed multi-hat package
 | 008 | 008 | Implemented - Pending Review | `phase/phase-008-establish-patch-model-and-artifact-taxonomy.md` | Add patch baseline and explicit artifact taxonomy | 007 |
 | 009 | 009 | Implemented - Pending Review | `phase/phase-009-clarify-surface-boundaries.md` | Clarify active-vs-archive boundaries and prototype disposition | 008 |
 | 010 | 010 | Implemented - Pending Review | `phase/phase-010-add-operator-and-reviewer-guidance.md` | Add steady-state operator/reviewer guidance | 009 |
-| 011 | 011 | In Progress | `phase/phase-011-multilingual-front-door.md` | Improve multilingual prompt interpretation at the package front door | 010 |
+| 011 | 011 | Implemented - Pending Review | `phase/phase-011-multilingual-front-door.md` | Improve multilingual prompt interpretation at the package front door | 010 |
 | 012 | 012 | Implemented - Pending Review | `phase/phase-012-plugin-compatible-packaging-and-install-cleanup.md` | Keep plugin-compatible packaging in one workspace and validate local marketplace install | 011 |
 | 013 | 013 | Implemented - Pending Review | `phase/phase-013-separate-repo-cutover.md` | Finalize standalone repo authority and retire shared-workspace authority posture | 012 |
 

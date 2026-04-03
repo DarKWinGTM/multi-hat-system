@@ -1,7 +1,7 @@
 # Changelog - Multi-Hat System
 
 > **Parent Document:** [../design/design.md](../design/design.md)
-> **Current Version:** 2.6
+> **Current Version:** 2.7
 > **Session:** dd0bf4af-a66b-4b07-bb9d-a90a0e57b54e
 
 ---
@@ -10,6 +10,7 @@
 
 | Version | Date | Changes | Summary |
 |---------|------|---------|---------|
+| 2.7 | 2026-04-04 | **[Completed the multilingual front-door wave](#version-27)** | Added bounded multilingual examples and validation guidance across the active front-door surfaces so intent mapping improves across prompt languages without turning the package into translated duplicate doctrine. |
 | 2.6 | 2026-04-03 | **[Hardened the front-door output contract](#version-26)** | Tightened the runtime and support surfaces so Advisory / Decision / Clarify-First mode behavior is more explicit and more decision-useful in live usage. |
 | 2.5 | 2026-04-03 | **[Normalized public install docs to repo-root marketplace guidance](#version-25)** | Reworked the public install story around repo-root local marketplace usage, validated `./`-based install from the standalone repo root, and kept the shared `darkwingtm` route scoped as local workspace development context. |
 | 2.4 | 2026-04-02 | **[Validated local marketplace install for the governed package](#version-24)** | Added a shared local marketplace scaffold, installed the package through local marketplace settings, and recorded the persistent local install/cache path model. |
@@ -27,6 +28,23 @@
 | 1.2 | 2026-03-28 | **[Polished and enriched the canonical main agent](#version-12)** | Improved `multi-hat-system.md` with sharper mode behavior, compact high-value hat checkpoints, and stronger synthesis guardrails without touching the prototype corpus. |
 | 1.1 | 2026-03-28 | **[Created canonical main agent file for the multi-hat-system](#version-11)** | Created `multi-hat-system.md` as the first canonical runtime authority while preserving the prototype directory as source/reference material. |
 | 1.0 | 2026-03-28 | **[Created governance baseline for the multi-hat-system workspace](#version-10)** | Created the doc-first governance scaffold so the current prototype can later be consolidated into one canonical main agent without losing the existing source/reference material. |
+
+---
+
+<a id="version-27"></a>
+## Version 2.7: Completed the multilingual front-door wave
+
+**Date:** 2026-04-04
+**Session:** dd0bf4af-a66b-4b07-bb9d-a90a0e57b54e
+
+### Changes
+- Added bounded multilingual examples to the canonical agent and support skill so Advisory / Decision / Clarify-First intent is easier to map across prompt languages.
+- Updated overview and validation guidance so the package now checks multilingual front-door behavior explicitly while keeping the deeper handbook English.
+- Synced README, TODO, phase, and patch wording so the multilingual wave is now reflected as implemented instead of still open.
+- Bumped plugin and marketplace package versions to `1.2.0`.
+
+### Summary
+The package now applies multilingual front-door support in a bounded way: it improves intent mapping across languages without duplicating the deeper doctrine into translated parallel content.
 
 ---
 

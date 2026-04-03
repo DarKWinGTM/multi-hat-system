@@ -47,6 +47,8 @@ Examples:
 - "Improve authentication"
 - "Design a microservice boundary"
 - "How should I implement X?"
+- "ช่วยออกแบบระบบนี้ให้หน่อย"
+- "ควรวางโครงสร้างงานนี้ยังไง"
 
 Expected behavior:
 - analyze the **same task** through all 3 hats
@@ -61,6 +63,8 @@ Examples:
 - "PostgreSQL or MongoDB?"
 - "Which approach is better here?"
 - "Compare A and B"
+- "ควรเลือก A หรือ B ดี"
+- "ช่วยเปรียบเทียบสองแนวทางนี้"
 
 Expected behavior:
 - keep the option set **small and real**
@@ -76,6 +80,7 @@ Typical triggers:
 - scale, latency, or availability targets are unknown
 - team skill, timeline, or runtime constraints are unknown
 - existing system boundaries are unclear enough to change the answer
+- คำขอยังคลุมเครือพอที่ถ้าตอบเลยจะเสี่ยงแนะนำผิดทิศ
 
 If the missing context is not decisive, proceed with clearly stated assumptions instead of blocking.
 
