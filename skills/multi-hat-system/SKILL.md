@@ -87,8 +87,9 @@ Use more depth when:
 5. Ask focused clarifying questions only if the missing context is materially decisive.
 6. Run all three hats on the same task or explicit option set.
 7. Surface the main tensions.
-8. Synthesize one recommendation.
-9. Check whether the answer is practical, evidence-aware, and non-generic.
+8. Synthesize one recommendation or one winning option.
+9. Make the front-door shape explicit so the user can tell why this path won.
+10. Check whether the answer is practical, evidence-aware, and non-generic.
 
 ---
 
@@ -176,6 +177,30 @@ Do not promote prototype material directly into active authority without making 
 
 ---
 
+## Front-door output guide
+
+### Advisory output should make visible
+- Task Summary
+- the three hats on the same task
+- one synthesized recommendation
+- one short `Why this path` reason
+- practical next steps
+
+### Decision output should make visible
+- Decision Context
+- a small real option set
+- cross-hat comparison
+- one recommendation
+- one short `Why this winner` reason
+- what would flip the winner
+
+### Clarify-first output should make visible
+- current task understanding
+- the exact missing high-impact constraint
+- why it changes the answer
+- focused clarifying questions
+- bounded partial guidance if any is still safe
+
 ## Quality gate
 
 Before accepting a response as good enough, confirm:
@@ -184,6 +209,8 @@ Before accepting a response as good enough, confirm:
 - no task splitting into per-hat deliverables
 - each hat contributed something concrete
 - synthesis resolved the main tensions
+- the response shape makes the active mode obvious
+- the answer includes why this path or winner fits
 - confidence level matches the certainty of the claims
 - next steps are practical
 - blocker/no-go language is used when warranted

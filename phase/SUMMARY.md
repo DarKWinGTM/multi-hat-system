@@ -1,7 +1,7 @@
 # Multi-Hat System - Phase Summary
 
-> **Current Version:** 1.6
-> **Target Design:** [../design/design.md](../design/design.md) v1.5
+> **Current Version:** 1.7
+> **Target Design:** [../design/design.md](../design/design.md) v1.6
 > **Session:** dd0bf4af-a66b-4b07-bb9d-a90a0e57b54e
 > **Status:** In Progress
 > **Full history:** [../changelog/changelog.md](../changelog/changelog.md)
@@ -101,7 +101,7 @@ Need governed multi-hat package
 ## Global TODO / Changelog Coordination
 
 - `TODO.md` should track only the remaining real live-usage review work and later archive/install decisions.
-- `changelog/changelog.md` should distinguish structural completion, substantive completion, skill-surface modularization, and the new governance-hardening wave.
+- `changelog/changelog.md` should distinguish structural completion, substantive completion, skill-surface modularization, the governance-hardening wave, and the newer front-door product-hardening wave.
 - `design/design.md` remains the target-state authority for the one-main-agent plus modular support-surface model.
 - `README.md` should describe the package as substantively complete, patch-backed, and modularized, with future refinement driven by live usage rather than by archive dependency.
 
@@ -122,6 +122,7 @@ Need governed multi-hat package
 - prototype disposition model made explicit
 - operator/reviewer guidance added for steady-state package maintenance
 - governance docs resynchronized so phase/design/README/TODO/changelog no longer overstate or contradict package state
+- front-door output contract is now more explicit for Advisory / Decision / Clarify-First live usage
 
 ---
 

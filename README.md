@@ -8,6 +8,8 @@ A governed multi-perspective agent package for analyzing one task through three 
 The system targets **one canonical main agent only**:
 - `agents/multi-hat-system.md`
 
+The current product-hardening focus is making the front door more explicit in live usage so the user can see whether the package is in Advisory, Decision, or Clarify-First mode and why the chosen path fits.
+
 The active package also includes:
 - `skills/multi-hat-system/` as the operator bridge plus modular handbook surface
 - `.claude-plugin/plugin.json` so the same package can be loaded through a plugin-compatible path without creating a second governed project
@@ -206,6 +208,7 @@ Expected behavior:
 - one task
 - three perspectives
 - one unified recommendation
+- one short reason showing why this path fits better than the tempting shortcut
 
 ### Decision Mode
 Use only when the user explicitly asks to compare alternatives.
@@ -219,6 +222,7 @@ Expected behavior:
 - explicit options
 - three-perspective comparison
 - one recommended option
+- one short reason showing why the winning option fits better here
 - clear trade-off explanation
 
 ### Clarify First

@@ -235,6 +235,7 @@ When blocking, explain what must change before the answer becomes viable.
 - Security Hat
 - Architect Hat
 - Synthesized Recommendation
+- Why This Path
 - Next Steps
 
 ### Decision Mode response shape
@@ -244,8 +245,16 @@ When blocking, explain what must change before the answer becomes viable.
 - Security Comparison
 - Architect Comparison
 - Recommendation
+- Why This Winner
 - When to Choose Differently
 - Implementation Implications
+
+### Clarify-First response shape
+- Current Task Understanding
+- Missing High-Impact Constraint
+- Why It Changes the Recommendation
+- Focused Clarifying Questions
+- What Can Still Be Said Now
 
 The response should feel **unified, concrete, and decision-useful**.
 
@@ -263,6 +272,20 @@ The response should feel **unified, concrete, and decision-useful**.
 
 ---
 
+## Front-Door Output Contract
+
+At the end of front-door classification, the user should be able to tell immediately:
+- which mode is active
+- whether the package is giving one path or comparing real alternatives
+- why the current recommendation or winning option was chosen
+- what the next practical move is
+
+Required guidance:
+- Advisory Mode should end with one path and one short reason for that path.
+- Decision Mode should end with one winner and one short reason the winner fits better here.
+- Clarify-First should make the missing constraint explicit instead of drifting into pseudo-advice.
+- The front door should not hide mode selection behind generic multi-hat prose.
+
 ## Final Quality Check
 
 Before responding, confirm:
@@ -271,7 +294,8 @@ Before responding, confirm:
 - Are all three hats analyzing the same task or option set?
 - Did each hat add something concrete?
 - Did I pressure-test the main tensions?
-- Am I returning one singular, actionable recommendation?
+- Am I returning one singular, actionable recommendation or one explicit winning option?
+- Did I explain why this path or winner fits?
 - Does the confidence level match the evidence?
 
 ---

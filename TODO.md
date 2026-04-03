@@ -1,6 +1,6 @@
 # Multi-Hat System - TODO
 
-> **Last Updated:** 2026-03-30
+> **Last Updated:** 2026-04-03
 
 ---
 
@@ -21,7 +21,8 @@
 ## 📋 Tasks To Do
 
 ### Current Governance Execution
-- [ ] Review the governance-hardening wave across README/design/changelog/TODO/phase/patch and identify only remaining real gaps from live usage.
+- [x] Review the governance-hardening wave across README/design/changelog/TODO/phase/patch and identify only remaining real gaps from live usage.
+- [x] Harden the front-door output contract so Advisory / Decision / Clarify-First mode behavior is more explicit and more decision-useful in live usage.
 - [ ] Implement the multilingual front-door routing wave so the active package can better interpret advisory / decision / clarify-first prompts across prompt languages without translating the full handbook.
 - [x] Validate persistent plugin install and local-scope visibility from this same package through a shared local marketplace.
 - [x] Record the exact local marketplace-installed cache path and settings persistence model for this package.
@@ -41,6 +42,7 @@
 
 | Date | Changes |
 |------|---------|
+| 2026-04-03 | Hardened the front-door output contract across the runtime agent and support skill, clarified why-this-path / why-this-winner expectations in live usage, and bumped the plugin/marketplace package versions for installed update visibility. |
 | 2026-04-03 | Normalized public install docs to the standalone repo root, validated `claude plugins marketplace add ./ --scope local` plus `claude plugins install multi-hat-system@multi-hat-system --scope local` from the repo root in an isolated HOME, and kept the shared `darkwingtm` path scoped as checked local workspace-development context. |
 | 2026-04-02 | Added the shared local marketplace scaffold, validated local-scope plugin install for `multi-hat-system`, recorded the persisted local settings entry plus plugin-cache path model, and resynchronized README/design/changelog/TODO/phase/patch to match the new activation truth. |
 | 2026-03-30 | Added the governed `patch/*.patch.md` baseline, defined the explicit artifact taxonomy, clarified active vs archive/prototype boundaries, formalized prototype disposition, and added operator/reviewer guidance for steady-state package governance. |

@@ -3,7 +3,7 @@
 ## 0) Document Control
 
 > **Parent Scope:** Multi-Hat System Design
-> **Current Version:** 1.5
+> **Current Version:** 1.6
 > **Session:** dd0bf4af-a66b-4b07-bb9d-a90a0e57b54e (2026-04-02)
 
 ---
@@ -110,7 +110,8 @@ The canonical main agent should own:
 - synthesis protocol
 - evidence/confidence discipline
 - blocker / no-go behavior
-- concise response contracts for advisory mode and decision mode
+- concise response contracts for advisory mode, decision mode, and clarify-first handling
+- front-door output guidance that makes the active mode and chosen path legible in live usage
 - guardrails against misuse, scope drift, and accidental peer-agent behavior
 
 The canonical main agent should not directly embed every long explanatory, example-heavy, or checklist-heavy document in full.

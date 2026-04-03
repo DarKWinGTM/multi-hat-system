@@ -89,11 +89,11 @@ Validation guidance includes multilingual prompt checks to verify that the front
 
 ## 4) Verification
 
-- [ ] Confirm the canonical agent description now emphasizes intent-based mode/package selection rather than exact wording or prompt language
-- [ ] Confirm SKILL front-door examples include multilingual advisory/decision/clarify-first shapes
-- [ ] Confirm overview documents the multilingual front-door boundary without turning into a translated handbook
+- [x] Confirm the canonical agent description now makes the front-door mode/response contract more explicit in addition to intent-based selection
+- [x] Confirm SKILL front-door guidance now reinforces visible Advisory / Decision / Clarify-First output shapes
+- [x] Confirm overview documents the front-door boundary without turning into a translated handbook
 - [ ] Confirm validation now checks multilingual mode classification explicitly
-- [ ] Confirm the patch remains focused on front-door surfaces only
+- [x] Confirm the patch remains focused on front-door surfaces only
 
 ---
 

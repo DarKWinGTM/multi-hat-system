@@ -64,6 +64,7 @@ If the missing information is not decisive, proceed with explicit assumptions.
 - each hat adds materially different value
 - tensions are surfaced explicitly
 - one recommendation or one winning option is made clear
+- the user can see why this path or winner fits
 - next steps are practical
 - the active package is sufficient without needing prototype files for current-system correctness
 
