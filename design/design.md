@@ -17,7 +17,7 @@
 
 ## 2) Goal
 
-Provide a governed design baseline for `<workspace-root>/` so the live package can operate as **one canonical main agent file plus one canonical modular support surface** without depending on archive material for current-system correctness.
+Provide a governed design baseline for `<repo-root>/` as the standalone source of truth, so the live package can operate as **one canonical main agent file plus one canonical modular support surface** without depending on archive material for current-system correctness.
 
 This design establishes the live package structure by defining:
 - one canonical main agent only
@@ -249,9 +249,10 @@ Not found in the checked official scope:
 - no documented settings-based local directory activation method that clearly persists a local plugin path across sessions
 
 So the strategic distribution target should be:
+- treat `<repo-root>` as the package authority now
 - keep this package usable as a local source plugin now
 - use repo-root local marketplace install as the public local install/distribution path now
-- treat the shared `darkwingtm` route only as checked local workspace-development context
+- treat the shared `darkwingtm` route only as temporary checked local compatibility context, not source authority
 - keep the same package ready for broader marketplace-style distribution later
 - do not invent a second local project just to simulate plugin packaging
 

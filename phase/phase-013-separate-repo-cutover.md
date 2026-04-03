@@ -17,5 +17,5 @@ Finalize `multi-hat-system` as its own standalone GitHub repo authority without 
 - [x] decide the final standalone distribution story for the repo
 - [x] create/push `DarKWinGTM/multi-hat-system`
 - [x] validate repo-root local marketplace install from `./`
-- [ ] switch authority from shared workspace to standalone repo
-- [ ] retire shared-workspace authority cleanly
+- [x] switch authority from shared workspace to standalone repo at the documentation/source-of-truth level
+- [x] retire shared-workspace authority cleanly from public package posture, while leaving local compatibility usage explicitly scoped

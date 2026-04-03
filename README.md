@@ -81,16 +81,16 @@ Why this exact shape matters:
 | `claude --plugin-dir "<repo-root>"` | documented local source loading for development/testing from the standalone repo | verified locally |
 | `claude plugins marketplace add ./ --scope local` + `claude plugins install multi-hat-system@multi-hat-system --scope local` | repo-root local marketplace install for the standalone repo | validated locally |
 
-### Checked local development note
+### Local development compatibility note
 
-The same package is also currently validated through the shared local `darkwingtm` marketplace during workspace development. That shared-marketplace route is a checked local development path, not the public default install story for this repo.
+The same package may still be referenced through the shared local `darkwingtm` marketplace during workspace development, but that route is no longer package authority. The standalone repo is now the intended source of truth, and any remaining shared-workspace usage should be treated as temporary local compatibility only.
 
 What was **not** found in the checked official scope:
 - no documented `settings.json` key that clearly persists a local plugin directory across sessions by path
 
 So the package should currently be treated as:
+- **standalone repo authority now**
 - **validated repo-root local marketplace package now**
-- **single-workspace plugin-compatible source now**
 - **future broader marketplace/repository distribution candidate later**
 
 It is designed to answer three operator situations:
