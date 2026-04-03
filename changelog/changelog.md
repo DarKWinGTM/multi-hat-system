@@ -10,6 +10,7 @@
 
 | Version | Date | Changes | Summary |
 |---------|------|---------|---------|
+| 2.5 | 2026-04-03 | **[Normalized public install docs to repo-root marketplace guidance](#version-25)** | Reworked the public install story around repo-root local marketplace usage, validated `./`-based install from the standalone repo root, and kept the shared `darkwingtm` route scoped as local workspace development context. |
 | 2.4 | 2026-04-02 | **[Validated local marketplace install for the governed package](#version-24)** | Added a shared local marketplace scaffold, installed the package through local marketplace settings, and recorded the persistent local install/cache path model. |
 | 2.3 | 2026-04-01 | **[Aligned plugin packaging with the checked official activation model](#version-23)** | Recorded the checked official distinction between local source loading and marketplace installation, and hardened the package as a single-workspace future marketplace-style plugin source. |
 | 2.2 | 2026-04-01 | **[Consolidated plugin-compatible packaging back into the main workspace](#version-22)** | Removed the need for a second plugin-pilot workspace by embedding plugin-compatible packaging, cleanup planning, and validation tracking directly into the main `multi-hat-system` package. |
@@ -28,6 +29,26 @@
 
 ---
 
+<a id="version-25"></a>
+## Version 2.5: Normalized public install docs to repo-root marketplace guidance
+
+**Date:** 2026-04-03
+**Session:** dd0bf4af-a66b-4b07-bb9d-a90a0e57b54e
+
+### Changes
+- Reworked `README.md` so the public install path now starts from the standalone repo root instead of the shared `TEMPLATE/PLUGIN` workspace path.
+- Replaced source-side public install examples with repo-root guidance using:
+  - `claude plugins marketplace add ./ --scope local`
+  - `claude plugins install multi-hat-system@multi-hat-system --scope local`
+- Kept the shared `darkwingtm` marketplace route documented only as a checked local development note rather than the public default install story.
+- Validated repo-root local marketplace install in an isolated temporary HOME.
+- Verified that `claude agents` exposes `multi-hat-system:multi-hat-system` after repo-root install.
+
+### Summary
+The package now teaches a portable public install story from its own repo root while preserving the shared `darkwingtm` route only as scoped local workspace context.
+
+---
+
 <a id="version-24"></a>
 ## Version 2.4: Validated local marketplace install for the governed package
 
@@ -39,7 +60,7 @@
 - Added package-local `.claude-plugin/marketplace.json` so this package can later cut over into its own standalone repo-local marketplace root.
 - Updated package docs to distinguish `<workspace-root>` from `<marketplace-root>` and to record marketplace-style local install as an active validated path.
 - Installed `multi-hat-system@darkwingtm` into local scope and verified settings persistence through `.claude/settings.local.json`.
-- Verified plugin cache materialization under `~/.claude/plugins/cache/darkwingtm/multi-hat-system/1.0.0/`, visible agent discovery through `claude agents`, and successful post-install visibility after `/reload-plugins`.
+- Verified plugin cache materialization under `~/.claude/plugins/cache/darkwingtm/multi-hat-system/1.0.0/`, visible agent discovery through `claude agents`, successful post-install visibility after `/reload-plugins`, and fresh CLI-process visibility across session restarts.
 
 ### Summary
 The governed package now works not only through `--plugin-dir`, but also through a real local marketplace install path that persists in local Claude settings and surfaces the packaged agent in normal discovery.

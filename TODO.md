@@ -26,7 +26,7 @@
 - [x] Validate persistent plugin install and local-scope visibility from this same package through a shared local marketplace.
 - [x] Record the exact local marketplace-installed cache path and settings persistence model for this package.
 - [x] Validate `/reload-plugins` visibility from the marketplace-installed path.
-- [ ] Validate restart-time visibility from the marketplace-installed path.
+- [x] Validate restart-time visibility from the marketplace-installed path.
 - [ ] Apply the winning-path cleanup plan so only one active runtime distribution remains.
 - [ ] Complete separate-repo cutover and retire shared-workspace authority once the standalone repo becomes the source of truth.
 
@@ -41,6 +41,7 @@
 
 | Date | Changes |
 |------|---------|
+| 2026-04-03 | Normalized public install docs to the standalone repo root, validated `claude plugins marketplace add ./ --scope local` plus `claude plugins install multi-hat-system@multi-hat-system --scope local` from the repo root in an isolated HOME, and kept the shared `darkwingtm` path scoped as checked local workspace-development context. |
 | 2026-04-02 | Added the shared local marketplace scaffold, validated local-scope plugin install for `multi-hat-system`, recorded the persisted local settings entry plus plugin-cache path model, and resynchronized README/design/changelog/TODO/phase/patch to match the new activation truth. |
 | 2026-03-30 | Added the governed `patch/*.patch.md` baseline, defined the explicit artifact taxonomy, clarified active vs archive/prototype boundaries, formalized prototype disposition, and added operator/reviewer guidance for steady-state package governance. |
 | 2026-03-28 | Split the skill support layer into focused handbook files (`overview.md`, `advisory-mode.md`, `decision-mode.md`, per-hat files, `synthesis.md`, `validation.md`, `anti-patterns.md`, `examples.md`) so the active package can evolve section-by-section instead of concentrating all support depth into one `reference.md`, and resynchronized README/design/TODO to describe the modular skill surface truthfully. |

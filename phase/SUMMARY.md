@@ -37,7 +37,7 @@ The goal of this package is to operate through:
 | 010 | 010 | `phase/phase-010-add-operator-and-reviewer-guidance.md` | `design/design.md` sections `Artifact Taxonomy and Patch Model`, `Prototype Disposition Model` | `../patch/phase-010-operator-reviewer-guidance.patch.md` | Add explicit operator/reviewer guidance for live usage and future adoption decisions | Steady-state maintenance becomes more reviewable |
 | 011 | 011 | `phase/phase-011-multilingual-front-door.md` | `design/design.md` multilingual front-door rule | `../patch/phase-011-multilingual-front-door.patch.md` | Improve multilingual intent interpretation at the canonical agent and skill front door | Advisory / decision / clarify-first detection becomes easier to align across prompt languages |
 | 012 | 012 | `phase/phase-012-plugin-compatible-packaging-and-install-cleanup.md` | `design/design.md` single-workspace plugin-compatible packaging rule plus official activation/distribution model | `../patch/phase-012-plugin-compatible-packaging-and-install-cleanup.patch.md` | Keep plugin-compatible packaging, local marketplace install validation, and install cleanup inside the main workspace instead of a duplicate pilot project | One governed workspace remains authoritative and locally installable by marketplace |
-| 013 | 013 | `phase/phase-013-separate-repo-cutover.md` | `design/design.md` plus package-local marketplace cutover posture | `none` | Prepare authority migration from the shared workspace into a standalone `multi-hat-system` repo | Package can cut over to its own repo without duplicate authority |
+| 013 | 013 | `phase/phase-013-separate-repo-cutover.md` | `design/design.md` plus package-local marketplace cutover posture | `../patch/phase-013-separate-repo-cutover.patch.md` | Prepare authority migration from the shared workspace into a standalone `multi-hat-system` repo | Package can cut over to its own repo without duplicate authority |
 
 ---
 
@@ -74,6 +74,7 @@ Need governed multi-hat package
 | 010 | 010 | `phase/phase-010-add-operator-and-reviewer-guidance.md` | Implemented - Pending Review | Review Pending | Awaiting Review | steady-state operator/reviewer guidance added |
 | 011 | 011 | `phase/phase-011-multilingual-front-door.md` | In Progress | Review Pending | Awaiting Review | multilingual front-door wave opened |
 | 012 | 012 | `phase/phase-012-plugin-compatible-packaging-and-install-cleanup.md` | Implemented - Pending Review | Review Pending | Awaiting Review | local marketplace install path validated; cleanup path still pending |
+| 013 | 013 | `phase/phase-013-separate-repo-cutover.md` | Implemented - Pending Review | Review Pending | Awaiting Review | standalone repo exists; repo-root install validated; authority-retirement step still pending |
 
 ---
 
@@ -93,6 +94,7 @@ Need governed multi-hat package
 | 010 | 010 | Implemented - Pending Review | `phase/phase-010-add-operator-and-reviewer-guidance.md` | Add steady-state operator/reviewer guidance | 009 |
 | 011 | 011 | In Progress | `phase/phase-011-multilingual-front-door.md` | Improve multilingual prompt interpretation at the package front door | 010 |
 | 012 | 012 | Implemented - Pending Review | `phase/phase-012-plugin-compatible-packaging-and-install-cleanup.md` | Keep plugin-compatible packaging in one workspace and validate local marketplace install | 011 |
+| 013 | 013 | Implemented - Pending Review | `phase/phase-013-separate-repo-cutover.md` | Finalize standalone repo authority and retire shared-workspace authority posture | 012 |
 
 ---
 

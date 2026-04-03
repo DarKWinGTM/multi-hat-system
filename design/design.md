@@ -10,9 +10,8 @@
 
 ## 1) Path notation
 
-- `<workspace-root>` = this plugin package root
-- `<marketplace-root>` = the current shared local marketplace root that contains package directories plus `.claude-plugin/marketplace.json`
-- `<repo-marketplace-root>` = this package root when it becomes its own standalone plugin repo with local marketplace support
+- `<repo-root>` = this standalone repo root and the preferred public source-side path for install commands
+- `<workspace-root>` = the current local working copy of the same package
 - `<user-runtime-agents>` = the user-level Claude Code runtime agent directory
 - `<user-runtime-skills>` = the user-level Claude Code runtime skill directory
 
@@ -239,7 +238,7 @@ This avoids duplicate governance chains for the same package and keeps plugin-pa
 From the checked official Claude Code plugin docs:
 - local source plugin testing is documented through `claude --plugin-dir /path/to/plugin`
 - standard distributed plugin installation is documented through marketplace install
-- local marketplaces are documented, so one shared `<marketplace-root>` can expose this same package without creating a duplicate workspace
+- local marketplaces are documented, so this same package can be added from the standalone repo root through `claude plugins marketplace add ./ --scope local` without creating a duplicate workspace
 
 Checked local validation now shows:
 - local marketplace declaration persists through project-local Claude settings
@@ -251,7 +250,8 @@ Not found in the checked official scope:
 
 So the strategic distribution target should be:
 - keep this package usable as a local source plugin now
-- use local marketplace install as the persistent local development/distribution path
+- use repo-root local marketplace install as the public local install/distribution path now
+- treat the shared `darkwingtm` route only as checked local workspace-development context
 - keep the same package ready for broader marketplace-style distribution later
 - do not invent a second local project just to simulate plugin packaging
 

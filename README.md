@@ -24,32 +24,23 @@ The Multi-Hat System exists to reduce single-perspective blind spots in complex 
 
 ## Path notation
 
-- `<workspace-root>` = this plugin package root
-- `<marketplace-root>` = the current shared local marketplace root that contains package directories plus `.claude-plugin/marketplace.json`
-- `<repo-marketplace-root>` = this package root when it becomes its own standalone plugin repo with local marketplace support
+- `<repo-root>` = this standalone repo root and the preferred public source-side path for install commands
+- `<workspace-root>` = the current local working copy of the same package
 - `<user-runtime-agents>` = the user-level Claude Code runtime agent directory
 - `<user-runtime-skills>` = the user-level Claude Code runtime skill directory
 
 ## Installation and activation
 
-### Local marketplace install in the current shared workspace
-Add the current shared marketplace once:
+### Recommended public install path
+This package now has its own standalone GitHub repo at:
+- `https://github.com/DarKWinGTM/multi-hat-system`
+
+Clone once, then run the install from the repo root:
 
 ```bash
-claude plugins marketplace add "/home/node/workplace/AWCLOUD/TEMPLATE/PLUGIN" --scope local
-```
-
-Install this package:
-
-```bash
-claude plugins install multi-hat-system@darkwingtm --scope local
-```
-
-### Standalone-repo local marketplace install target
-When this package becomes its own repo, the intended local marketplace shape is:
-
-```bash
-claude plugins marketplace add "<repo-marketplace-root>" --scope local
+git clone https://github.com/DarKWinGTM/multi-hat-system.git
+cd multi-hat-system
+claude plugins marketplace add ./ --scope local
 claude plugins install multi-hat-system@multi-hat-system --scope local
 ```
 
@@ -66,19 +57,28 @@ claude plugins list
 claude agents
 ```
 
+Checked local validation from the repo root:
+- `claude plugins marketplace add ./ --scope local` succeeds
+- `claude plugins install multi-hat-system@multi-hat-system --scope local` succeeds
+- `claude agents` shows `multi-hat-system:multi-hat-system`
+
 ### Alternate local source loading
 
 | Path | Current meaning | Status |
 |---|---|---|
-| `claude --plugin-dir "<workspace-root>"` | documented local source loading for development/testing | verified locally |
-| `/plugin marketplace add <marketplace-root>` + `/plugin install <plugin@marketplace>` | documented marketplace-style install path for distributed plugins | validated locally via `darkwingtm` |
+| `claude --plugin-dir "<repo-root>"` | documented local source loading for development/testing from the standalone repo | verified locally |
+| `claude plugins marketplace add ./ --scope local` + `claude plugins install multi-hat-system@multi-hat-system --scope local` | repo-root local marketplace install for the standalone repo | validated locally |
+
+### Checked local development note
+
+The same package is also currently validated through the shared local `darkwingtm` marketplace during workspace development. That shared-marketplace route is a checked local development path, not the public default install story for this repo.
 
 What was **not** found in the checked official scope:
 - no documented `settings.json` key that clearly persists a local plugin directory across sessions by path
 
 So the package should currently be treated as:
+- **validated repo-root local marketplace package now**
 - **single-workspace plugin-compatible source now**
-- **validated local marketplace-installed package now**
 - **future broader marketplace/repository distribution candidate later**
 
 It is designed to answer three operator situations:
@@ -270,15 +270,16 @@ Implemented so far:
 - substantive operating playbook migrated into the active package
 - skill handbook split into focused support files so it is easier to evolve section-by-section
 - patch baseline, artifact taxonomy, surface-boundary clarification, and operator/reviewer guidance are now part of the governed package model
-- shared local marketplace scaffolding now exposes this package for marketplace-style local install without creating a duplicate workspace
+- shared local marketplace scaffolding also exposes this package for checked workspace development, but that is no longer the recommended public install story
 - plugin visibility remains intact after `/reload-plugins`
+- fresh CLI-process visibility confirms the marketplace-installed package remains available across session restarts
 
 Current review focus:
 - validate whether the new governance-hardening wave is sufficient in live usage
 - validate whether multilingual front-door wording improves advisory / decision / clarify-first interpretation without creating new mode confusion
-- validate `/reload-plugins` only if hot-reload behavior remains operationally important after marketplace-style local install is in place
+- validate `/reload-plugins` only if hot-reload behavior remains operationally important after repo-root local marketplace install is in place
 - decide when to retire loser runtime-distribution paths after marketplace-installed usage stays stable
-- complete separate-repo cutover so this package can leave the shared workspace cleanly
+- polish public-repo readiness while keeping `@darkwingtm` as the current shared publisher namespace
 
 Deferred for later:
 - archive/reorganization work if needed later
