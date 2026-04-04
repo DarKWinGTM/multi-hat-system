@@ -67,14 +67,20 @@ Checked local validation from the repo root:
 
 ### Update an installed plugin
 
-If the plugin is already installed, update it by using the installed identifier shape `plugin@marketplace`:
+If the plugin was installed from this standalone repo-local marketplace, update it by using the installed identifier shape `plugin@marketplace`:
+
+```bash
+claude plugins update multi-hat-system@multi-hat-system --scope local
+```
+
+If you still have an older local install through the shared compatibility marketplace, the installed identifier may instead be `multi-hat-system@darkwingtm`:
 
 ```bash
 claude plugins update multi-hat-system@darkwingtm --scope local
 ```
 
 Why this exact shape matters:
-- `claude plugins update multi-hat-system --scope local` may fail because the installed local plugin is keyed by `multi-hat-system@darkwingtm`
+- `claude plugins update multi-hat-system --scope local` may fail because the installed local plugin is keyed by `plugin@marketplace`
 - the explicit `plugin@marketplace` form matches the installed identifier shown in `claude plugins list`
 
 ### Alternate local source loading

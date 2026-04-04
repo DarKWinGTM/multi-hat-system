@@ -100,7 +100,7 @@ Need governed multi-hat package
 
 ## Global TODO / Changelog Coordination
 
-- `TODO.md` should track only the remaining real live-usage review work and later archive/install decisions.
+- `TODO.md` should track only the remaining real live-usage review work and later archive/install decisions; the earlier winner-path cleanup and standalone authority-retirement slice is now closed.
 - `changelog/changelog.md` should distinguish structural completion, substantive completion, skill-surface modularization, the governance-hardening wave, and the newer front-door product-hardening wave.
 - `design/design.md` remains the target-state authority for the one-main-agent plus modular support-surface model.
 - `README.md` should describe the package as substantively complete, patch-backed, and modularized, with future refinement driven by live usage rather than by archive dependency.

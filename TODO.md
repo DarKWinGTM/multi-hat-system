@@ -1,6 +1,6 @@
 # Multi-Hat System - TODO
 
-> **Last Updated:** 2026-04-03
+> **Last Updated:** 2026-04-04
 
 ---
 
@@ -28,8 +28,8 @@
 - [x] Record the exact local marketplace-installed cache path and settings persistence model for this package.
 - [x] Validate `/reload-plugins` visibility from the marketplace-installed path.
 - [x] Validate restart-time visibility from the marketplace-installed path.
-- [ ] Apply the winning-path cleanup plan so only one active runtime distribution remains.
-- [ ] Complete separate-repo cutover and retire shared-workspace authority once the standalone repo becomes the source of truth.
+- [x] Apply the winning-path cleanup plan so repo-local marketplace posture is primary and the shared `darkwingtm` path is compatibility-only.
+- [x] Complete separate-repo cutover and retire shared-workspace authority once the standalone repo becomes the source of truth.
 
 ### Deferred / Later Decisions
 - [ ] Decide when to archive, trim, or reorganize the `prototype/` corpus after the active package is stable in use.
@@ -42,6 +42,7 @@
 
 | Date | Changes |
 |------|---------|
+| 2026-04-04 | Cleaned the remaining distribution-posture drift so README update guidance now treats repo-local marketplace as the primary authority path, closed the winning-path cleanup/cutover TODO items, and bumped the plugin/marketplace package versions to `1.2.1`. |
 | 2026-04-04 | Completed the multilingual front-door wave by adding bounded multilingual examples and validation guidance across the active front-door surfaces, and bumped the plugin/marketplace package versions to `1.2.0`. |
 | 2026-04-03 | Hardened the front-door output contract across the runtime agent and support skill, clarified why-this-path / why-this-winner expectations in live usage, and bumped the plugin/marketplace package versions for installed update visibility. |
 | 2026-04-03 | Normalized public install docs to the standalone repo root, validated `claude plugins marketplace add ./ --scope local` plus `claude plugins install multi-hat-system@multi-hat-system --scope local` from the repo root in an isolated HOME, and kept the shared `darkwingtm` path scoped as checked local workspace-development context. |
